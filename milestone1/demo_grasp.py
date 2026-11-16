@@ -11,7 +11,7 @@ POSE_FILE = Path(__file__).with_name("grasp_pose.npy")
 
 # Fill this in after physically measuring the distance.
 # Example: 45 mm -> 0.045 m
-DOWN_DISTANCE_M = None
+DOWN_DISTANCE_M = 0.06
 
 
 def main():
