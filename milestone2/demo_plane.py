@@ -6,7 +6,7 @@ from libcapstone import LightsaberDetector
 from milestone2.plane import fit_plane, record_tip_points
 
 
-SABER_COLOR = "blue"
+SABER_COLOR = "red"
 
 
 def main():
@@ -20,7 +20,7 @@ def main():
         print(f"n = {np.round(n, 4)}")
         print(f"d = {d:.4f}")
         print(f"Plane: {n[0]:.4f} x + {n[1]:.4f} y + {n[2]:.4f} z = {d:.4f}")
-        detector.draw_plane((n, d))
+        detector.draw_plane(np.append(n, -d), center=points.mean(axis=0))
         input("Take the screenshot, then press Enter to quit...")
 
 

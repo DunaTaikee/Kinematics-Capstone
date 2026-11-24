@@ -11,7 +11,7 @@ from milestone2.inverse_kinematics import inverse_kinematics
 from milestone2.tip_transform import calibrate_tip_transform, ee_target_for_blade_direction, skew
 
 
-SABER_COLOR = "blue"
+SABER_COLOR = "green"
 LIFT_M = 0.15
 HOLD_POSITION = np.array([0.45, 0.0, 0.35])
 OFFSETS = [
